@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: snow;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: black;
+}
+
+#wrapper{
+  border:2px solid black ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  margin:10px;
+  row-gap: 10px;
+  column-gap: 20px;
+  flex-wrap:wrap;
+}
+
+.box{
+  background-color: brown;
+  font-size: 30px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

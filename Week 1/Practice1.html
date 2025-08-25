@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    .custome-list li::marker {
+      content: "*";
+    }
+  </style>
+</head>
+<body>
+  <h1>Resume</h1>
+  <a href="https://www.google.com" target="_self">For google</a>
+  <a href="https://www.google.com" target="_blank">
+    <img src="BBT 3.jpg" alt="Big Bang Theory cast photo" width="300" height="300">
+  </a>
+  <ul>
+    <li>Apple</li>
+    <li>Samsung</li>
+    <li>Vivo</li>
+  </ul>
+
+  <ol class="custome-list">
+    <li>Project 1</li>
+    <li>Project 2</li>
+  </ol>
+
+  <table border="10" width="250" height="40">
+    <tr>
+      <th>Year</th>
+      <th>Degree</th>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Complete school</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>In progress</td>
+    </tr>
+  </table>
+
+  <form>
+    <input type="radio" name="person" value="khushi" class="names" checked>khushi
+    <input type="radio" name="person" value="Aryan" class="names">Aryan
+    <br>
+    <br>
+    <label>Select language:</label>
+    <input type="checkbox" name="language" value="java">java
+    <input type="checkbox" name="language" value="javascript">javascript
+    <input type="checkbox" name="language" value="python">python
+    <input type="checkbox" name="language" value="php">php
+    <br>
+
+    <input type="email" name="email" placeholder="Enter your email">
+    <input type="number" name="age" min="1" max="100">
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

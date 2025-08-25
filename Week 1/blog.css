@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: snow;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: black;
+}
+
+#navigation{
+  display: flex;
+  font-size: 22px;
+  font-weight: bold;
+  justify-content: center;
+  background-image: linear-gradient(to right,rgb(0, 202, 71),rgb(49, 49, 202));
+  padding: 16px 0;
+  gap: 46px;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+
+#navigation a{
+  text-decoration: none;
+  color: white;
+  transition: color 0.3 ease;
+}
+
+#navigation a:hover{
+  color: rgb(0, 0, 0);
+}
+
+#intro{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#intro h2{
+  color: rgb(0, 142, 130);
+  margin-bottom: 10px;
+}
+
+aside{
+  background-color: #1e1e1e;
+  color: white;
+  margin: 16px;
+  margin-top: 40px;
+  padding: 16px;
+  max-width: 300px;
+  max-height: 240px;
+  border-radius: 8px;
+}
+
+aside h2{
+  color: rgb(18, 234, 172);
+  padding-bottom: 16px;
+}
+
+main{
+  margin:36px; 
+}
+
+.flex-container{
+  display: flex;;
+}
+
+article{
+  background-color: #1e1e1e;
+  padding: 24px;
+  margin-bottom: 36px;
+  color: white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin-top: 5px;
+  max-width: 80%;
+}
+
+article h2{
+  margin-bottom: 16px;
+  color: orange;
+}
+
+.detail{
+  margin-bottom: 16px;
+}
+
+article p{
+  line-height: 2;
+}
+
+
+article time,
+article strong {
+  color: #F5F5F5;
+  font-size: 0.9rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 16px 0;
+    border-top: 1px solid #333;
+}
