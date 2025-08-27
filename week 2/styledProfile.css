@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card::before{
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+  position: absolute;
+  height: 36%;
+  width: 100%;
+  background-color:  #4070f4;
+}
+
+.profile{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(13, 134, 247, 0.877);
+  padding: 3.5px;
+  margin-bottom: 12px;
+
+}
+
+.profile .Profile-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+ 
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.info .name{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.info .job{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap:10px;
+}
+
+.socials .link{
+  text-decoration: none;
+  background-color: #4070f4;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top:25px;
+  gap: 10px;
+}
+
+.btn{
+  background-color: #4070f4;
+  padding: 8px 24px;
+  border-radius: 24px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #0e4bf1;
+}
+
+.data{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.data .stats{
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.stats:last-child{
+  border-right: none;
+}
+
+.data i{
+  font-size: 18px;
+  margin-right: 6px;
+}

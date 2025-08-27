@@ -33,6 +33,10 @@ html {
   overflow: hidden;
 }
 
+#Standard{
+  transform: scale(1.1);
+}
+
 header {
   font-size: 1.5rem;
   width: 100%;
@@ -48,14 +52,39 @@ ul {
   list-style: none;
   text-align: start;
   font-size: 20px;
-  padding-left: 2rem;
-  margin-top: 2rem;
+  padding-left: 0;
+  margin-top: 1.5rem;
 }
 
 ul,
 li {
-  padding-top: 16px;
+  padding-left: 28px;
+  position: relative;
+  margin: 36px 0;
 }
+
+ul li::before {
+  content:"";
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0.70em; 
+  width: 14px;
+  height: 14px;
+}
+
+#Basic ul li::before{
+  background-color: rgb(9, 123, 123);;
+}
+
+#Standard ul li::before{
+    background-color: rgb(188, 132, 20);
+}
+
+#Premium ul li::before{
+    background-color: rgba(186, 16, 16, 0.913);
+}
+
 
 button {
   margin-top: 7rem;
