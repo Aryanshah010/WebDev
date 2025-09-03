@@ -1,0 +1,337 @@
+:root {
+  --primary: #314438;
+  --secondary: #8dc0d2;
+  --bg: #f9fafb;
+  --background: #ffffff;
+  --text: #1d1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4rem;
+}
+
+html,
+body {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--bg);
+  color: var(--background);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.banner {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.mainbanner {
+  font-weight: 400;
+  font-size: 0.8rem;
+  gap: 2rem;
+  border: 0.5px solid #6b7280;
+  flex-wrap: wrap; /* ✅ wrap items on small screens */
+}
+
+.mainbanner .menuItems {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #1d1c1c;
+}
+
+header {
+  position: relative;
+  background-image: url(spacejoy-9M66C_w_ToM-unsplash.jpg);
+  width: 100%;
+  height: 78vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 25vh 5%; /* ✅ % padding avoids overflow */
+  max-width: 90%;
+}
+
+.heroHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.subheading {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.heroBtn {
+  background-color: var(--background);
+  width: 13rem;
+  height: 2.8rem;
+  font-weight: 500;
+  border: none;
+  font-size: 0.7rem;
+  transition: 0.3s ease-in;
+  margin-top: 16px;
+}
+
+.heroBtn:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.socialproof {
+  background: var(--primary);
+  color: var(--bg);
+  width: 100%;
+  height: 170px;
+  max-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logos {
+  gap: 2rem;
+  position: absolute;
+  margin-top: 3rem;
+}
+
+.title-heading {
+  color: var(--background);
+  align-items: center;
+  padding-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.company-logos .link {
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.link:hover {
+  transform: scale(1.2);
+}
+
+.product {
+  background-color: var(--bg);
+  color: var(--text);
+  margin-top: 4rem;
+}
+
+.officeHeadline,
+.exploreOffice {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.homeofficeHeading,
+.teamofficeHeading {
+  margin-top: 7px;
+  font-weight: 600;
+  color: var(--secondary);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.arrowicon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.subheadingHomeOffice,
+.subheadingTeamOffice {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: gray;
+  margin-top: 5px;
+}
+
+.exploreOffice {
+  margin-top: 6rem;
+}
+
+.tableImage {
+  column-gap: 2rem;
+  row-gap: 5rem;
+  flex-wrap: wrap; /* ✅ wrap instead of forcing overflow */
+  justify-content: center;
+}
+
+#HOMEOFFICE,
+#TEAMOFFICE {
+  flex: 1 1 300px; /* ✅ responsive widths */
+  max-width: 500px;
+  height: 350px;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#HO,
+#TO {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+#HO:hover,
+#TO:hover {
+  transform: scale(1.2);
+}
+
+.exploreProduct-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  justify-content: center;
+  max-width: 1100px;
+  column-gap: 12px;
+  row-gap: 5rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: 398px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.product-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.seeall {
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  color: var(--secondary);
+  display: flex;
+  justify-content: center;
+}
+
+.small {
+  font-size: 1rem;
+  margin-left: 3px;
+  padding-top: 1.3px;
+  justify-content: center;
+  display: inline;
+}
+
+.collections {
+  background-color: var(--primary);
+  color: var(--bg);
+  display: block;
+  text-align: center;
+  margin: 5.5rem auto 0 auto;
+  width: 13.9rem;
+  transition: 0.3s ease-in;
+}
+
+.collections:hover {
+  border-color: var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.trail {
+  position: relative;
+  background-color: #9c432e;
+  color: var(--bg);
+  width: 100%;
+  min-height: 16rem;
+  gap: 10px;
+  margin-top: 4.5rem;
+}
+
+.trail-info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  flex: 1 1 300px; /* ✅ responsive */
+  padding-left: 10%;
+  font-size: 1.5rem;
+}
+
+.trail-paragraph {
+  flex: 1 1 300px; /* ✅ responsive */
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-right: 10%;
+}
+
+.trail-paragraph .learnmore {
+  color: var(--bg);
+}
