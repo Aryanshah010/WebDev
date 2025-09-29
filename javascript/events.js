@@ -92,9 +92,45 @@
 //   mo.style.backgroundColor = "red";
 // });
 
-let abcd = document.querySelector("#abcd");
+// let abcd = document.querySelector("#abcd");
 
-window.addEventListener("mousemove", (d) => {
-  abcd.style.top = d.clientY + "px";
-  abcd.style.left = d.clientX + "px";
-});
+// window.addEventListener("mousemove", (d) => {
+//   abcd.style.top = d.clientY + "px";
+//   abcd.style.left = d.clientX + "px";
+// });
+
+// let ul=document.querySelector("ul")
+// ul.addEventListener("click",(e)=>{
+//   // e.target.style.textDecoration="line-through"
+//   e.target.classList.toggle("lt")
+// })
+
+// let inp=document.querySelector("input")
+// let span=document.querySelector("span")
+// inp.addEventListener("input",(v)=>{
+//   span.textContent= inp.value.length;
+// })
+
+//Counter Program
+// let c = document.querySelector("span");
+// let btnInc = document.querySelector("#increase");
+// let btnDec = document.querySelector("#decrease");
+// let btnReset = document.querySelector("#reset");
+
+// let count = 0;
+
+// btnInc.addEventListener("click", () => {
+//   count++;
+//   c.textContent = count;
+// });
+
+// btnDec.addEventListener("click", () => {
+//   count--;
+//   c.textContent = count;
+// });
+
+// btnReset.addEventListener("click", () => {
+//   count = 0;
+//   c.textContent = count;
+// });
+
