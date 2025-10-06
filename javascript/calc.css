@@ -1,0 +1,91 @@
+/* calc.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #2e2e48);
+}
+
+.container {
+  width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.display {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn {
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:nth-child(4n),
+.btn:last-child {
+  background: #ff9f0a;
+  color: #fff;
+}
+
+.btn:nth-child(4n):hover,
+.btn:last-child:hover {
+  background: #ffa733;
+}
+
+.btn:nth-child(1),
+.btn:nth-child(2),
+.btn:nth-child(3){
+  color: #ff453a;
+  font-weight: 600;
+}
+
+
+.displayValue {
+  overflow: scroll;
+  scrollbar-width: none;
+  white-space: nowrap;
+  width: 100%;
+  text-align: right;
+}
