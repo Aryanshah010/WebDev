@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documen</title>
+    <link rel="stylesheet" href="thisPractice.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Add User</h2>
+      <form id="userForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="role">Role</label>
+        <input type="text" id="role" name="role" required />
+
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" required></textarea>
+
+        <label for="photoUrl">Photo URL</label>
+        <input type="url" id="photoUrl" name="photoUrl" required />
+
+        <button id="submitBtn" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="cards-container" id="cardsContainer"></div>
+
+
+    <script src="thisScript.js"></script>
+  </body>
+</html>
