@@ -54,7 +54,7 @@
 
 //   checkRole(){
 //     console.log(`you are a ${this.role}`);
-    
+
 //   }
 
 //   write(text) {
@@ -87,3 +87,18 @@
 //   "junior manager"
 // );
 
+// class Book {
+//   constructor(title, author, price) {
+//     this.title = title;
+//     this.author = author;
+//     this.price = price;
+//   }
+
+//   getInfo() {
+//     return `${this.title} by ${this.author} costs $${this.price}`;
+//   }
+// }
+
+// let book1 = new Book("Atomic Habits", "James Clear", 350);
+// let book2 = new Book("Power of Subconsious mind", "aryan shah", 250);
+// let book3 = new Book("The law of power", "raju", 400);

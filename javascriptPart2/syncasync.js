@@ -22,17 +22,17 @@
 // }
 // test();
 
-function getData(userID) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Getting all data", userID);
-      resolve()
-    }, 2000);
-  });
-}
+// function getData(userID) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Getting all data", userID);
+//       resolve()
+//     }, 2000);
+//   });
+// }
 
-(async function() {
-  await getData(1);
-  await getData(2);
-  await getData(3);
-})()
+// (async function() {
+//   await getData(1);
+//   await getData(2);
+//   await getData(3);
+// })()

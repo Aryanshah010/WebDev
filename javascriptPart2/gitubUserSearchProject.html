@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Search Project</title>
+    <link rel="stylesheet" href="gitubUserSearchProject.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DevHunt</h1>
+      <div class="search-box">
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Enter GitHub username..."
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+      
+      <p class="error" id="errorMessage"></p>
+
+      <div class="user-card hidden" id="userCard">
+        <div class="user-header">
+          <div id="imgcontainer">
+            <img id="avatar" src="" alt="User Avatar" />
+          </div>
+          <div class="user-info">
+            <h2 id="name">Name</h2>
+            <p id="username">@username</p>
+            <a id="profileLink" href="#" target="_blank">View Profile</a>
+          </div>
+        </div>
+        <div class="user-stats">
+          <div><strong id="repos">0</strong><span>Repos</span></div>
+          <div><strong id="followers">0</strong><span>Followers</span></div>
+          <div><strong id="following">0</strong><span>Following</span></div>
+        </div>
+        <p class="bio" id="bio"></p>
+      </div>
+
+    </div>
+
+
+
+    <script src="gitubUserSearchProject.js"></script>
+  </body>
+</html>
