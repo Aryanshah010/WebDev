@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="movieSearchApp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="searchInputBox">
+        <span id="searchIcon"> <i class="fa fa-search"></i> </span>
+        <input
+          type="search"
+          id="searchMovie"
+          placeholder="Search a movie...."
+        />
+      </div>
+
+      <!-- Movie info container -->
+      <div class="movie-container hidden">
+        <div class="poster">
+          <img id="posterMovie" src="" alt="Movie poster" />
+        </div>
+
+        <div class="movie-info">
+          <header class="movie-header">
+            <span class="rating">
+              <i class="fa-solid fa-star"></i>
+              <span id="ratingValue"></span>
+            </span>
+            <h3 id="movieTitle"></h3>
+            <span id="duration"></span>
+          </header>
+
+          <ul id="genres" class="genres"></ul>
+
+          <div class="credits">
+            <p><strong>Director:</strong> <span id="director"></span></p>
+            <p><strong>Writers:</strong> <span id="writers"></span></p>
+            <p><strong>Stars:</strong> <span id="stars"></span></p>
+          </div>
+
+          <p id="releaseDate">
+            <strong>Released Date: </strong
+            ><span class="release-date"></span> (<span id="language"></span>)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="movieSearchApp.js"></script>
+  </body>
+</html>
