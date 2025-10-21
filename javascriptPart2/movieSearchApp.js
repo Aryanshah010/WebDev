@@ -10,6 +10,22 @@ let writers = document.querySelector("#writers");
 let Stars = document.querySelector("#stars");
 let releaseDate = document.querySelector(".release-date");
 let language = document.querySelector("#language");
+let toast = document.querySelector(".toast");
+
+function showToast(message) {
+  toast.classList.remove("hidden");
+  toast.textContent = message;
+  setTimeout(() => {
+    toast.classList.add("show");
+  }, 100);
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => {
+      toast.classList.add("hidden");
+    }, 400);
+  }, 3000);
+}
 
 async function fetchMovie(movieName) {
   try {
@@ -17,7 +33,7 @@ async function fetchMovie(movieName) {
       `https://www.omdbapi.com/?apikey=be981bc2&t=${movieName}`
     );
     if (!response.ok) {
-      errorMsg.textContent = `HTTP error: ${response.status}`;
+      showToast(`HTTP error: ${response.status}`);
       throw new Error(`HTTP error: ${response.status}`);
     }
     let data = await response.json();
@@ -32,17 +48,19 @@ async function searchMovie() {
   let movieName = searchInp.value.trim();
 
   if (!movieName) {
+    showToast("Please provide proper movie name");
     return;
   }
 
   try {
     const movieData = await fetchMovie(movieName);
-    if (movieData.response === "False") {
-      console.warn("Movie not found");
+    if (movieData.Response === "False") {
+      showToast("Movie not found!");
+      movieContainer.classList.add("hidden");
       return;
     }
 
-    console.log(movieData);
+    genres.innerHTML = "";
     movieContainer.classList.remove("hidden");
     moviePic.src = movieData.Poster;
     ratingValue.textContent = movieData.imdbRating;
@@ -58,13 +76,10 @@ async function searchMovie() {
     writers.textContent = movieData.Writer;
     Stars.textContent = movieData.Actors;
     releaseDate.textContent = movieData.Released;
-
-    let movieLanguage = movieData.Language.split(",");
-    let lang = movieLanguage[0];
-    language.textContent = lang;
+    language.textContent = movieData.Language.split(",")[0];
     searchInp.value = "";
   } catch (error) {
-    console.error("Error fetching movie:", error);
+    showToast("Something went wrong");
   }
 }
 
